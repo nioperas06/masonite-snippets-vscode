@@ -1,0 +1,58 @@
+{
+    "Auth": {
+		"scope": "python",
+		"prefix": "Auth",
+        "body": [
+            "Auth"
+        ],
+        "description": "Auth"
+    },
+    "Auth helper": {
+		"scope": "python",
+		"prefix": "auth()",
+        "body": [
+            "auth()"
+        ],
+        "description": "Auth helper"
+    },
+    "Container": {
+		"scope": "python",
+		"prefix": "Container",
+        "body": [
+            "Request.app().make('${1:name}')"
+        ],
+        "description": "Container"
+    },
+    "Container helper": {
+		"scope": "python",
+		"prefix": "container()",
+        "body": [
+            "container().make('${1:name}')"
+        ],
+        "description": "Container helper"
+    },
+    "env": {
+		"scope": "python",
+		"prefix": "env()",
+        "body": [
+            "env('${1:name}')"
+        ],
+        "description": "env"
+    },
+    "Resolve": {
+		"scope": "python",
+		"prefix": "Resolve",
+        "body": [
+            "Request.app().resolve(${1:some_function})"
+        ],
+        "description": "Resolve"
+    },
+    "Resolve helper": {
+		"scope": "python",
+		"prefix": "resolve()",
+        "body": [
+            "resolve('${1:name}')"
+        ],
+        "description": "Resolve helper"
+    }
+}
