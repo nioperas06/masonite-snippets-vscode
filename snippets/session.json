@@ -1,0 +1,66 @@
+{
+    "Session": {
+		"scope": "python",
+		"prefix": "Session",
+        "body": [
+            "Session"
+        ],
+        "description": "Session"
+    },
+    "Session set": {
+		"scope": "python",
+		"prefix": "Session.set",
+        "body": [
+            "Session.set('${1:key}', '${2:value}')"
+        ],
+        "description": "Session set"
+    },
+    "Session set object": {
+		"scope": "python",
+		"prefix": "Session.set object",
+        "body": [
+            "Session.set('${1:key}', {'${2:key}', '${3:value}'})"
+        ],
+        "description": "Session set object"
+    },
+    "Session get": {
+		"scope": "python",
+		"prefix": "Session.get",
+        "body": [
+            "Session.get('${1:key}', '${2:value}')"
+        ],
+        "description": "Session get"
+    },
+    "Session has": {
+		"scope": "python",
+		"prefix": "Session.has",
+        "body": [
+            "Session.has('${1:key}')"
+        ],
+        "description": "Session has"
+    },
+    "Session all": {
+		"scope": "python",
+		"prefix": "Session.all",
+        "body": [
+            "Session.all()"
+        ],
+        "description": "Session all"
+    },
+    "Session flash": {
+		"scope": "python",
+		"prefix": "Session.flash",
+        "body": [
+            "Session.flash('${1:key}', '${2:value}')"
+        ],
+        "description": "Session flash"
+    },
+    "Session reset": {
+		"scope": "python",
+		"prefix": "Session.reset",
+        "body": [
+            "Session.reset()"
+        ],
+        "description": "Session reset"
+    }
+}
