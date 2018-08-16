@@ -1,0 +1,18 @@
+{
+    "event fire": {
+		"scope": "python",
+		"prefix": "event.fire",
+        "body": [
+            "event.fire('${1:user.subscribed}')"
+        ],
+        "description": "event fire"
+    },
+    "event": {
+		"scope": "python",
+		"prefix": "event",
+        "body": [
+            "event('${1:user.subscribed}')"
+        ],
+        "description": "event"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "Broadcast": {
+		"scope": "python",
+		"prefix": "Broadcast",
+        "body": [
+            "Broadcast"
+        ],
+        "description": "Broadcast"
+    },
+    "Broadcast driver": {
+		"scope": "python",
+		"prefix": "Broadcast.driver",
+        "body": [
+            "Broadcast.driver('${1:value}')"
+        ],
+        "description": "Broadcast driver"
+    },
+    "Broadcast channel": {
+		"scope": "python",
+		"prefix": "Broadcast.channel",
+        "body": [
+            "Broadcast.channel('${1:channel_name}', '${2:message}')"
+        ],
+        "description": "Broadcast channel"
+    },
+    "Broadcast driver channel": {
+		"scope": "python",
+		"prefix": "Broadcast.driver.channel",
+        "body": [
+            "Broadcast.driver('${1:value}').channel('${2:channel_name}', '${3:message}')"
+        ],
+        "description": "Broadcast driver channel"
+    }
+}
