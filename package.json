@@ -1,0 +1,55 @@
+{
+  "name": "masonite",
+  "publisher": "nioperas06",
+  "displayName": "Masonite Snippets",
+  "description": "Masonite snippets by Junior Gantin",
+  "icon": "images/masonite-logo.png",
+  "galleryBanner": {
+    "color": "#0273D4",
+    "theme": "dark"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nioperas06/masonite-snippets-vscode.git"
+  },
+  "keywords": [
+    "Masonite",
+    "Python"
+  ],
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.20.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "contributes": {
+    "jsonValidation": [
+      {
+        "fileMatch": "manifest.json",
+        "url": "http://json.schemastore.org/web-manifest"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/**.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/**.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vscode": "^1.0.0",
+    "typescript": "^2.1.5",
+    "@types/node": "^8.0.34"
+  },
+  "dependencies": {}
+}
