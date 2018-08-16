@@ -1,0 +1,66 @@
+{
+    "Cache": {
+		"scope": "python",
+		"prefix": "Cache",
+        "body": [
+            "Cache"
+        ],
+        "description": "Upload"
+    },
+    "Cache store": {
+		"scope": "python",
+		"prefix": "Cache.store",
+        "body": [
+            "Cache.store('${1:key}', '${2:value}')"
+        ],
+        "description": "Cache store"
+    },
+    "Cache store_for": {
+		"scope": "python",
+		"prefix": "Cache.store_for",
+        "body": [
+            "Cache.store_for('${1:key}', '${2:value}', ${3:time}, '${4:seconds}')"
+        ],
+        "description": "Cache store_for"
+    },
+    "Cache get": {
+		"scope": "python",
+		"prefix": "Cache.get",
+        "body": [
+            "Cache.get('${1:key}')"
+        ],
+        "description": "Cache get"
+    },
+    "Cache is_valid": {
+		"scope": "python",
+		"prefix": "Cache.is_valid",
+        "body": [
+            "Cache.is_valid('${1:key}')"
+        ],
+        "description": "Cache is_valid"
+    },
+    "Cache cache_exists": {
+		"scope": "python",
+		"prefix": "Cache.cache_exists",
+        "body": [
+            "Cache.cache_exists('${1:key}')"
+        ],
+        "description": "Cache cache_exists"
+    },
+    "Cache update": {
+		"scope": "python",
+		"prefix": "Cache.update",
+        "body": [
+            "Cache.update('${1:key}', '${2:value}')"
+        ],
+        "description": "Cache update"
+    },
+    "Cache delete": {
+		"scope": "python",
+		"prefix": "Cache.delete",
+        "body": [
+            "Cache.delete('${1:key}')"
+        ],
+        "description": "Cache delete"
+    }
+}
