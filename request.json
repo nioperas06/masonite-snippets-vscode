@@ -1,0 +1,306 @@
+{
+    "Request input": {
+		"scope": "python",
+		"prefix": "Request.input",
+        "body": [
+            "Request.input('${1:name}')"
+        ],
+        "description": "Request input"
+    },
+    "Request input helper": {
+		"scope": "python",
+		"prefix": "request().input",
+        "body": [
+            "request().input('${1:name}')"
+        ],
+        "description": "Request input helper"
+    },
+    "Request all": {
+		"scope": "python",
+		"prefix": "Request.all",
+        "body": [
+            "Request.all()"
+        ],
+        "description": "Request all"
+    },
+    "Request all helper": {
+		"scope": "python",
+		"prefix": "request().all",
+        "body": [
+            "request().all()"
+        ],
+        "description": "Request all helper"
+    },
+    "Request has": {
+		"scope": "python",
+		"prefix": "Request.has",
+        "body": [
+            "Request.has('${1:name}')"
+        ],
+        "description": "Request has"
+    },
+    "Request has helper": {
+		"scope": "python",
+		"prefix": "request().has",
+        "body": [
+            "request().has('${1:name}')"
+        ],
+        "description": "Request has helper"
+    },
+    "Request only": {
+		"scope": "python",
+		"prefix": "Request.only",
+        "body": [
+            "Request.only('${1:name}')"
+        ],
+        "description": "Request only"
+    },
+    "Request only helper": {
+		"scope": "python",
+		"prefix": "request().only",
+        "body": [
+            "request().only('${1:name}')"
+        ],
+        "description": "Request only helper"
+    },
+    "Request param": {
+		"scope": "python",
+		"prefix": "Request.param",
+        "body": [
+            "Request.param('${1:name}')"
+        ],
+        "description": "Request param"
+    },
+    "Request param helper": {
+		"scope": "python",
+		"prefix": "request().param",
+        "body": [
+            "request().param('${1:name}')"
+        ],
+        "description": "Request param helper"
+    },
+    "Request cookie": {
+		"scope": "python",
+		"prefix": "Request.cookie",
+        "body": [
+            "Request.cookie('${1:key}', '${2:value}')"
+        ],
+        "description": "Request cookie"
+    },
+    "Request cookie helper": {
+		"scope": "python",
+		"prefix": "request().cookie",
+        "body": [
+            "request().cookie('${1:key}', '${2:value}')"
+        ],
+        "description": "Request cookie helper"
+    },
+    "Request get_cookies": {
+		"scope": "python",
+		"prefix": "Request.get_cookies",
+        "body": [
+            "Request.get_cookies()"
+        ],
+        "description": "Request get_cookies"
+    },
+    "Request get_cookies helper": {
+		"scope": "python",
+		"prefix": "request().get_cookies",
+        "body": [
+            "request().get_cookies()"
+        ],
+        "description": "Request get_cookies helper"
+    },
+    "Request get_cookie": {
+		"scope": "python",
+		"prefix": "Request.get_cookie",
+        "body": [
+            "Request.get_cookie('${1:name}')"
+        ],
+        "description": "Request get_cookie"
+    },
+    "Request get_cookie helper": {
+		"scope": "python",
+		"prefix": "request().get_cookie",
+        "body": [
+            "request().get_cookie('${1:name}')"
+        ],
+        "description": "Request get_cookie helper"
+    },
+    "Request delete_cookie": {
+		"scope": "python",
+		"prefix": "Request.delete_cookie",
+        "body": [
+            "Request.delete_cookie('${1:name}')"
+        ],
+        "description": "Request delete_cookie"
+    },
+    "Request delete_cookie helper": {
+		"scope": "python",
+		"prefix": "Request.delete_cookie",
+        "body": [
+            "request().delete_cookie('${1:name}')"
+        ],
+        "description": "Request delete_cookie helper"
+    },
+    "Request user": {
+		"scope": "python",
+		"prefix": "Request.user",
+        "body": [
+            "Request.user()"
+        ],
+        "description": "Request user"
+    },
+    "Request user helper": {
+		"scope": "python",
+		"prefix": "request().user",
+        "body": [
+            "request().user()"
+        ],
+        "description": "Request user helper"
+    },
+    "Request redirect": {
+		"scope": "python",
+		"prefix": "Request.redirect",
+        "body": [
+            "Request.redirect('${1:/url}')"
+        ],
+        "description": "Request redirect"
+    },
+    "Request redirect helper": {
+		"scope": "python",
+		"prefix": "request().redirect",
+        "body": [
+            "request().redirect('${1:/url}')"
+        ],
+        "description": "Request redirect helper"
+    },
+    "Request redirect_to": {
+		"scope": "python",
+		"prefix": "Request.redirect_to",
+        "body": [
+            "Request.redirect_to('${1:/url}')"
+        ],
+        "description": "Request redirect_to"
+    },
+    "Request redirect_to helper": {
+		"scope": "python",
+		"prefix": "request().redirect_to",
+        "body": [
+            "request().redirect_to('${1:/url}')"
+        ],
+        "description": "Request redirect_to helper"
+    },
+    "Request redirect_to with params": {
+		"scope": "python",
+		"prefix": "Request.redirect_to with params",
+        "body": [
+            "Request.redirect_to('${1:/url}', {'${2:key}': '${3:value}'})"
+        ],
+        "description": "Request redirect_to with params"
+    },
+    "Request redirect_to helper with params": {
+		"scope": "python",
+		"prefix": "request().redirect_to with params",
+        "body": [
+            "request().redirect_to('${1:/url}', {'${2:key}': '${3:value}'})"
+        ],
+        "description": "Request redirect_to helper with params"
+    },
+    "Request back": {
+		"scope": "python",
+		"prefix": "Request.back",
+        "body": [
+            "Request.back()"
+        ],
+        "description": "Request back"
+    },
+    "Request back helper": {
+		"scope": "python",
+		"prefix": "request().back",
+        "body": [
+            "request().back()"
+        ],
+        "description": "Request back helper"
+    },
+    "Request back URL": {
+		"scope": "python",
+		"prefix": "Request.back URL",
+        "body": [
+            "Request.back(default='${1:url}')"
+        ],
+        "description": "Request back URL"
+    },
+    "Request back URL helper": {
+		"scope": "python",
+		"prefix": "request().back URL",
+        "body": [
+            "request().back(default='${1:url}')"
+        ],
+        "description": "Request back URL helper"
+    },
+    "Request key": {
+		"scope": "python",
+		"prefix": "Request.key",
+        "body": [
+            "Request.key('${1:key}')"
+        ],
+        "description": "Request key"
+    },
+    "Request key helper": {
+		"scope": "python",
+		"prefix": "request().key",
+        "body": [
+            "request().key('${1:key}')"
+        ],
+        "description": "Request key helper"
+    },
+    "Request header": {
+		"scope": "python",
+		"prefix": "Request.header",
+        "body": [
+            "Request.header('${1:name}')"
+        ],
+        "description": "Request header"
+    },
+    "Request header helper": {
+		"scope": "python",
+		"prefix": "request().header",
+        "body": [
+            "request().header('${1:name}')"
+        ],
+        "description": "Request header helper"
+    },
+    "Request status": {
+		"scope": "python",
+		"prefix": "Request.status",
+        "body": [
+            "Request.status('${1:name}')"
+        ],
+        "description": "Request status"
+    },
+    "Request status helper": {
+		"scope": "python",
+		"prefix": "request().status",
+        "body": [
+            "request().status('${1:name}')"
+        ],
+        "description": "Request status helper"
+    },
+    "Request get_request_method": {
+		"scope": "python",
+		"prefix": "Request.get_request_method",
+        "body": [
+            "Request.get_request_method()"
+        ],
+        "description": "Request get_request_method"
+    },
+    "Request get_request_method helper": {
+		"scope": "python",
+		"prefix": "request().get_request_method",
+        "body": [
+            "request().get_request_method()"
+        ],
+        "description": "Request get_request_method helper"
+    }
+}
