@@ -17,7 +17,7 @@
     "Masonite",
     "Python"
   ],
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.20.0"
   },
@@ -38,11 +38,87 @@
     "snippets": [
       {
         "language": "python",
-        "path": "./snippets/**.json"
+        "path": "./snippets/authentication.json"
       },
       {
         "language": "python",
-        "path": "./snippets/routing/**.json"
+        "path": "./snippets/broadcasting.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/caching.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/encryption.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/events.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/helper.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/mail.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/queues-and-jobs.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/request.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/session.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/template-caching.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/uploading.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/validation.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/validator.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/view.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/delete.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/get.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/patch.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/post.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/put.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/route-group.json"
       }
     ]
   },
