@@ -8,13 +8,13 @@
         "name": "Junior Gantin",
         "email": "nioperas06@gmail.com"
     },
-    "homepage": "https://github.com/onecentlin/laravel5-snippets-vscode",
+    "homepage": "https://github.com/nioperas06/masonite-snippets-vscode",
     "repository": {
         "type": "git",
-        "url": "https://github.com/onecentlin/laravel5-snippets-vscode"
+        "url": "https://github.com/nioperas06/masonite-snippets-vscode"
     },
     "bugs": {
-        "url": "https://github.com/onecentlin/laravel5-snippets-vscode/issues"
+        "url": "https://github.com/nioperas06/masonite-snippets-vscode/issues"
     },
     "engines": {
         "vscode": "^1.0.0"
