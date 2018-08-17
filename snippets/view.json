@@ -1,63 +1,34 @@
 {
-    "View-composer.sublime-snippet": {
-        "prefix": "View::composer",
+    "View helper": {
+		"scope": "python",
+		"prefix": "view",
         "body": [
-            "view()->composer('${1:name}', function (${2:\\$view}) {",
-            "    $3",
-            "});"
+            "view('${1:name}')"
         ],
-        "description": "Define a View Composer"
+        "description": "View helper"
     },
-    "View-composerClass.sublime-snippet": {
-        "prefix": "View::composerClass",
+    "View Class": {
+		"scope": "python",
+		"prefix": "view",
         "body": [
-            "view()->composer('${1:name}', '${2:App\\Http\\ViewComposers\\SomeComposer}');$3"
+            "View('${1:name}')"
         ],
-        "description": "Define a Class-based View Composer"
+        "description": "View Class"
     },
-    "View-exists.sublime-snippet": {
-        "prefix": "View::exists",
+    "View with data": {
+		"scope": "python",
+		"prefix": "view.param",
         "body": [
-            "if (view()->exists('${1:view.name}'))",
-            "{",
-            "    $2",
-            "}"
+            "view('${1:name}', {'${2:param}': ${3:value}})"
         ],
-        "description": "Determine if a view exists"
+        "description": "View with data"
     },
-    "View-make.sublime-snippet": {
-        "prefix": "View::make",
+    "View Class with data": {
+		"scope": "python",
+		"prefix": "View.param",
         "body": [
-            "view('${1:view.name}', ${2:\\$data});$3"
+            "view('${1:name}', {'${2:param}': ${3:value}})"
         ],
-        "description": "Create a View with Data"
-    },
-    "View-makeCompact.sublime-snippet": {
-        "prefix": "View::makeCompact",
-        "body": [
-            "view('${1:view.name}', compact(${2:\\$data}));$3"
-        ],
-        "description": "Create a View, Pass Data with compact()"
-    },
-    "View-makeWith.sublime-snippet": {
-        "prefix": "View::makeWith",
-        "body": [
-            "view(${1:'view.name'})->with('${2:key}', ${3:\\$value});$4"
-        ],
-        "description": "Create a View, Pass Data using with()"
-    },
-    "View-render.sublime-snippet": {
-        "prefix": "View::render",
-        "body": [
-            "view(${1:'name'}, ${2:\\$data})->render();$3"
-        ],
-        "description": "Render a view with some data"
-    },
-    "View-share.sublime-snippet": {
-        "prefix": "View::share",
-        "body": [
-            "view()->share('${1:key}', ${2:\\$value});$3"
-        ],
-        "description": "Share Data across all Views"
+        "description": "View Class with data"
     }
 }

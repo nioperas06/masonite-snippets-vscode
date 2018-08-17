@@ -1,79 +1,66 @@
 {
-    "Session-all.sublime-snippet": {
-        "prefix": "Session::all",
+    "Session": {
+		"scope": "python",
+		"prefix": "Session",
         "body": [
-            "\\$request->session()->all();"
+            "Session"
         ],
-        "description": "Retrieve All Data from the Session"
+        "description": "Session"
     },
-    "Session-flash.sublime-snippet": {
-        "prefix": "Session::flash",
+    "Session set": {
+		"scope": "python",
+		"prefix": "Session.set",
         "body": [
-            "\\$request->session()->flash('${1:key}', ${2:\\$value});$3"
+            "Session.set('${1:key}', '${2:value}')"
         ],
-        "description": "Flash an Item in the Session"
+        "description": "Session set"
     },
-    "Session-flush.sublime-snippet": {
-        "prefix": "Session::flush",
+    "Session set object": {
+		"scope": "python",
+		"prefix": "Session.set object",
         "body": [
-            "\\$request->session()->flush();"
+            "Session.set('${1:key}', {'${2:key}', '${3:value}'})"
         ],
-        "description": "Remove All Items from the Session"
+        "description": "Session set object"
     },
-    "Session-forget.sublime-snippet": {
-        "prefix": "Session::forget",
+    "Session get": {
+		"scope": "python",
+		"prefix": "Session.get",
         "body": [
-            "\\$request->session()->forget('${1:key}');$2"
+            "Session.get('${1:key}', '${2:value}')"
         ],
-        "description": "Remove an Item from the Session"
+        "description": "Session get"
     },
-    "Session-get.sublime-snippet": {
-        "prefix": "Session::get",
+    "Session has": {
+		"scope": "python",
+		"prefix": "Session.has",
         "body": [
-            "\\$request->session()->get('${1:key}', '${2:default}');$3"
+            "Session.has('${1:key}')"
         ],
-        "description": "Retrieve an Item from the Session or Default Value"
+        "description": "Session has"
     },
-    "Session-has.sublime-snippet": {
-        "prefix": "Session::has",
+    "Session all": {
+		"scope": "python",
+		"prefix": "Session.all",
         "body": [
-            "\\$request->session()->has('${1:key}');$2"
+            "Session.all()"
         ],
-        "description": "Determin if an Item Exists in the Session"
+        "description": "Session all"
     },
-    "Session-keep.sublime-snippet": {
-        "prefix": "Session::keep",
+    "Session flash": {
+		"scope": "python",
+		"prefix": "Session.flash",
         "body": [
-            "\\$request->session()->keep(${1:['key', 'otherkey']});$2"
+            "Session.flash('${1:key}', '${2:value}')"
         ],
-        "description": "Reflash Only a Subset of Flash Data"
+        "description": "Session flash"
     },
-    "Session-push.sublime-snippet": {
-        "prefix": "Session::push",
+    "Session reset": {
+		"scope": "python",
+		"prefix": "Session.reset",
         "body": [
-            "\\$request->session()->push('${1:key.subArray}', '${2:value}');$3"
+            "Session.reset()"
         ],
-        "description": "Push a Value onto an Array Session Value"
-    },
-    "Session-put.sublime-snippet": {
-        "prefix": "Session::put",
-        "body": [
-            "\\$request->session()->put('${1:key}', ${2:\\$value});$3"
-        ],
-        "description": "Store an Item in the Session"
-    },
-    "Session-reflash.sublime-snippet": {
-        "prefix": "Session::reflash",
-        "body": [
-            "\\$request->session()->reflash();"
-        ],
-        "description": "Reflash the Current Flash Data"
-    },
-    "Session-regenerate.sublime-snippet": {
-        "prefix": "Session::regenerate",
-        "body": [
-            "\\$request->session()->regenerate();"
-        ],
-        "description": "Regenerate the Session ID"
+        "description": "Session reset"
     }
 }

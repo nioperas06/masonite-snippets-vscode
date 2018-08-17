@@ -1,0 +1,17 @@
+{
+    "RouteGroup": {
+		"scope": "python",
+        "prefix": "RouteGroup",
+        "body": [
+			"RouteGroup([",
+			"",
+			"],",
+			"middleware=('${0:auth}',)",
+			"domain='${1:subdomain}'",
+			"prefix='${2:/prefix}'",
+			"name='${3:name.}'",
+			"),"
+        ],
+        "description": "RouteGroup"
+	}
+}

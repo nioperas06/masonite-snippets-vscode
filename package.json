@@ -1,13 +1,12 @@
 {
-    "name": "laravel5-snippets",
-    "displayName": "Laravel 5 Snippets",
-    "description": "Laravel 5 snippets for Visual Studio Code",
-    "version": "1.5.0",
-    "publisher": "onecentlin",
+    "name": "masonite-snippets",
+    "displayName": "Masonite Snippets",
+    "description": "Masonite snippets for Visual Studio Code",
+    "version": "0.0.2",
+    "publisher": "nioperas06",
     "author": {
-        "name": "Winnie Lin",
-        "email": "onecentlin@gmail.com",
-        "url": "https://devmanna.blogspot.com"
+        "name": "Junior Gantin",
+        "email": "nioperas06@gmail.com"
     },
     "homepage": "https://github.com/onecentlin/laravel5-snippets-vscode",
     "repository": {
@@ -21,7 +20,7 @@
         "vscode": "^1.0.0"
     },
     "keywords": [
-        "laravel",
+        "python",
         "snippet"
     ],
     "icon": "images/icon.png",
@@ -35,100 +34,88 @@
     "contributes": {
         "snippets": [
             {
-                "language": "php",
-                "path": "./snippets/auth.json"
+              "language": "python",
+              "path": "./snippets/authentication.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/cache.json"
+              "language": "python",
+              "path": "./snippets/broadcasting.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/config.json"
+              "language": "python",
+              "path": "./snippets/caching.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/console.json"
+              "language": "python",
+              "path": "./snippets/encryption.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/cookie.json"
+              "language": "python",
+              "path": "./snippets/events.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/crypt.json"
+              "language": "python",
+              "path": "./snippets/helper.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/db.json"
+              "language": "python",
+              "path": "./snippets/mail.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/event.json"
+              "language": "python",
+              "path": "./snippets/queues-and-jobs.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/hash.json"
+              "language": "python",
+              "path": "./snippets/request.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/helper.json"
+              "language": "python",
+              "path": "./snippets/session.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/log.json"
+              "language": "python",
+              "path": "./snippets/template-caching.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/mail.json"
+              "language": "python",
+              "path": "./snippets/uploading.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/redirect.json"
+              "language": "python",
+              "path": "./snippets/validation.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/relation.json"
+              "language": "python",
+              "path": "./snippets/validator.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/request.json"
+              "language": "python",
+              "path": "./snippets/view.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/response.json"
+              "language": "python",
+              "path": "./snippets/routing/delete.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/route.json"
+              "language": "python",
+              "path": "./snippets/routing/get.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/schema.json"
+              "language": "python",
+              "path": "./snippets/routing/patch.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/session.json"
+              "language": "python",
+              "path": "./snippets/routing/post.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/storage.json"
+              "language": "python",
+              "path": "./snippets/routing/put.json"
             },
             {
-                "language": "php",
-                "path": "./snippets/view.json"
-            },
-            {
-                "language": "php",
-                "path": "./snippets/passport.json"
-            },
-            {
-                "language": "php",
-                "path": "./snippets/str.json"
-            },
-            {
-                "language": "php",
-                "path": "./snippets/broadcast.json"
+              "language": "python",
+              "path": "./snippets/routing/route-group.json"
             }
         ]
     }

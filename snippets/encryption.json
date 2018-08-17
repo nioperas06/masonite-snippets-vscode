@@ -1,0 +1,34 @@
+{
+    "Sign": {
+		"scope": "python",
+		"prefix": "Sign",
+        "body": [
+            "Sign"
+        ],
+        "description": "Sign"
+    },
+    "Sign encrypt": {
+		"scope": "python",
+		"prefix": "Sign.encrypt",
+        "body": [
+            "Sign().encrypt('${1:value}')"
+        ],
+        "description": "Sign encrypt"
+    },
+    "Sign decrypt": {
+		"scope": "python",
+		"prefix": "Sign.decrypt",
+        "body": [
+            "Sign().decrypt('${1:value}')"
+        ],
+        "description": "Sign decrypt"
+    },
+    "password helper": {
+		"scope": "python",
+		"prefix": "password",
+        "body": [
+            "password('${1:secret}')"
+        ],
+        "description": "password helper"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Queue": {
+		"scope": "python",
+		"prefix": "Queue",
+        "body": [
+            "Queue"
+        ],
+        "description": "Queue"
+    },
+    "Queue push": {
+		"scope": "python",
+		"prefix": "Queue.push",
+        "body": [
+            "Queue.push(${1:SendWelcomeEmail})"
+        ],
+        "description": "Queue push"
+    }
+}

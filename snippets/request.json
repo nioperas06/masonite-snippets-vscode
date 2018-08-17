@@ -1,423 +1,306 @@
 {
-    "Request-method.sublime-snippet": {
-        "prefix": "Request::method",
+    "Request input": {
+		"scope": "python",
+		"prefix": "Request.input",
         "body": [
-            "\\$request->method()"
+            "Request.input('${1:name}')"
         ],
-        "description": "Get the request method (GET, POST, ...)."
+        "description": "Request input"
     },
-    "Request-root.sublime-snippet": {
-        "prefix": "Request::root",
+    "Request input helper": {
+		"scope": "python",
+		"prefix": "request().input",
         "body": [
-            "\\$request->root()"
+            "request().input('${1:name}')"
         ],
-        "description": "Get the root URL for the application."
+        "description": "Request input helper"
     },
-    "Request-url.sublime-snippet": {
-        "prefix": "Request::url",
+    "Request all": {
+		"scope": "python",
+		"prefix": "Request.all",
         "body": [
-            "\\$request->url()"
+            "Request.all()"
         ],
-        "description": "Get the URL (no query string) for the request."
+        "description": "Request all"
     },
-    "Request-fullUrl.sublime-snippet": {
-        "prefix": "Request::fullUrl",
+    "Request all helper": {
+		"scope": "python",
+		"prefix": "request().all",
         "body": [
-            "\\$request->fullUrl()"
+            "request().all()"
         ],
-        "description": "Get the full URL for the request."
+        "description": "Request all helper"
     },
-    "Request-fullUrlWithQuery": {
-        "prefix": "Request::fullUrlWithQuery",
+    "Request has": {
+		"scope": "python",
+		"prefix": "Request.has",
         "body": [
-            "\\$request->fullUrlWithQuery(${1:\\$query})$2"
+            "Request.has('${1:name}')"
         ],
-        "description": "Get the full URL for the request with the added query string parameters."
+        "description": "Request has"
     },
-    "Request-path.sublime-snippet": {
-        "prefix": "Request::path",
+    "Request has helper": {
+		"scope": "python",
+		"prefix": "request().has",
         "body": [
-            "\\$request->path()"
+            "request().has('${1:name}')"
         ],
-        "description": "Get the current path info for the request."
+        "description": "Request has helper"
     },
-    "Request-decodedPath.sublime-snippet": {
-        "prefix": "Request::decodedPath",
+    "Request only": {
+		"scope": "python",
+		"prefix": "Request.only",
         "body": [
-            "\\$request->decodedPath()"
+            "Request.only('${1:name}')"
         ],
-        "description": "Get the current encoded path info for the request."
+        "description": "Request only"
     },
-    "Request-segment.sublime-snippet": {
-        "prefix": "Request::segment",
+    "Request only helper": {
+		"scope": "python",
+		"prefix": "request().only",
         "body": [
-            "\\$request->segment(${1:\\$index}, '${2:default}')$3"
+            "request().only('${1:name}')"
         ],
-        "description": "Get a segment from the URI (1 based index)."
+        "description": "Request only helper"
     },
-    "Request-segments.sublime-snippet": {
-        "prefix": "Request::segments",
+    "Request param": {
+		"scope": "python",
+		"prefix": "Request.param",
         "body": [
-            "\\$request->segments()"
+            "Request.param('${1:name}')"
         ],
-        "description": "Get all of the segments for the request path."
+        "description": "Request param"
     },
-    "Request-is": {
-        "prefix": "Request::is",
+    "Request param helper": {
+		"scope": "python",
+		"prefix": "request().param",
         "body": [
-            "\\$request->is()"
+            "request().param('${1:name}')"
         ],
-        "description": "Determine if the current request URI matches a pattern."
+        "description": "Request param helper"
     },
-    "Request-fullUrlIs": {
-        "prefix": "Request::fullUrlIs",
+    "Request cookie": {
+		"scope": "python",
+		"prefix": "Request.cookie",
         "body": [
-            "\\$request->fullUrlIs()"
+            "Request.cookie('${1:key}', '${2:value}')"
         ],
-        "description": "Determine if the current request URL and query string matches a pattern."
+        "description": "Request cookie"
     },
-    "Request-ajax.sublime-snippet": {
-        "prefix": "Request::ajax",
+    "Request cookie helper": {
+		"scope": "python",
+		"prefix": "request().cookie",
         "body": [
-            "\\$request->ajax()"
+            "request().cookie('${1:key}', '${2:value}')"
         ],
-        "description": "Determine if the request is the result of an AJAX call."
+        "description": "Request cookie helper"
     },
-    "Request-pjax.sublime-snippet": {
-        "prefix": "Request::pjax",
+    "Request get_cookies": {
+		"scope": "python",
+		"prefix": "Request.get_cookies",
         "body": [
-            "\\$request->pjax()"
+            "Request.get_cookies()"
         ],
-        "description": "Determine if the request is the result of an PJAX call."
+        "description": "Request get_cookies"
     },
-    "Request-secure.sublime-snippet": {
-        "prefix": "Request::secure",
+    "Request get_cookies helper": {
+		"scope": "python",
+		"prefix": "request().get_cookies",
         "body": [
-            "\\$request->secure()"
+            "request().get_cookies()"
         ],
-        "description": "Determine if the request is over HTTPS."
+        "description": "Request get_cookies helper"
     },
-    "Request-ip.sublime-snippet": {
-        "prefix": "Request::ip",
+    "Request get_cookie": {
+		"scope": "python",
+		"prefix": "Request.get_cookie",
         "body": [
-            "\\$request->ip()"
+            "Request.get_cookie('${1:name}')"
         ],
-        "description": "Returns the client IP address."
+        "description": "Request get_cookie"
     },
-    "Request-ips.sublime-snippet": {
-        "prefix": "Request::ips",
+    "Request get_cookie helper": {
+		"scope": "python",
+		"prefix": "request().get_cookie",
         "body": [
-            "\\$request->ips()"
+            "request().get_cookie('${1:name}')"
         ],
-        "description": "Returns the client IP addresses."
+        "description": "Request get_cookie helper"
     },
-    "Request-exists.sublime-snippet": {
-        "prefix": "Request::exists",
+    "Request delete_cookie": {
+		"scope": "python",
+		"prefix": "Request.delete_cookie",
         "body": [
-            "\\$request->exists('${1:key}')$2"
+            "Request.delete_cookie('${1:name}')"
         ],
-        "description": "Determine if the request contains a given input item key."
+        "description": "Request delete_cookie"
     },
-    "Request-has.sublime-snippet": {
-        "prefix": "Request::has",
+    "Request delete_cookie helper": {
+		"scope": "python",
+		"prefix": "Request.delete_cookie",
         "body": [
-            "\\$request->has('${1:key}')$2"
+            "request().delete_cookie('${1:name}')"
         ],
-        "description": "Determine if the request contains a non-empty value for an input item."
+        "description": "Request delete_cookie helper"
     },
-    "Request-all.sublime-snippet": {
-        "prefix": "Request::all",
+    "Request user": {
+		"scope": "python",
+		"prefix": "Request.user",
         "body": [
-            "\\$request->all()"
+            "Request.user()"
         ],
-        "description": "Get all of the input and files for the request."
+        "description": "Request user"
     },
-    "Request-input.sublime-snippet": {
-        "prefix": "Request::input",
+    "Request user helper": {
+		"scope": "python",
+		"prefix": "request().user",
         "body": [
-            "\\$request->input('${1:key}'${2:, 'default'})$3"
+            "request().user()"
         ],
-        "description": "Retrieve an input item from the request."
+        "description": "Request user helper"
     },
-    "Request-only.sublime-snippet": {
-        "prefix": "Request::only",
+    "Request redirect": {
+		"scope": "python",
+		"prefix": "Request.redirect",
         "body": [
-            "\\$request->only(${1:\\$keys})$2"
+            "Request.redirect('${1:/url}')"
         ],
-        "description": "Get a subset of the items from the input data."
+        "description": "Request redirect"
     },
-    "Request-except.sublime-snippet": {
-        "prefix": "Request::except",
+    "Request redirect helper": {
+		"scope": "python",
+		"prefix": "request().redirect",
         "body": [
-            "\\$request->except(${1:\\$keys})$2"
+            "request().redirect('${1:/url}')"
         ],
-        "description": "Get all of the input except for a specified array of items."
+        "description": "Request redirect helper"
     },
-    "Request-intersect": {
-        "prefix": "Request::intersect",
+    "Request redirect_to": {
+		"scope": "python",
+		"prefix": "Request.redirect_to",
         "body": [
-            "\\$request->intersect(${1:\\$keys})$2"
+            "Request.redirect_to('${1:/url}')"
         ],
-        "description": "Intersect an array of items with the input data."
+        "description": "Request redirect_to"
     },
-    "Request-query.sublime-snippet": {
-        "prefix": "Request::query",
+    "Request redirect_to helper": {
+		"scope": "python",
+		"prefix": "request().redirect_to",
         "body": [
-            "\\$request->query('${1:key}', '${2:default'})$3"
+            "request().redirect_to('${1:/url}')"
         ],
-        "description": "Retrieve a query string item from the request."
+        "description": "Request redirect_to helper"
     },
-    "Request-hasCookie": {
-        "prefix": "Request::hasCookie",
+    "Request redirect_to with params": {
+		"scope": "python",
+		"prefix": "Request.redirect_to with params",
         "body": [
-            "\\$request->hasCookie('${1:key}')$2"
+            "Request.redirect_to('${1:/url}', {'${2:key}': '${3:value}'})"
         ],
-        "description": "Determine if a cookie is set on the request."
+        "description": "Request redirect_to with params"
     },
-    "Request-cookie": {
-        "prefix": "Request::cookie",
+    "Request redirect_to helper with params": {
+		"scope": "python",
+		"prefix": "request().redirect_to with params",
         "body": [
-            "\\$request->cookie('${1:key}', '${2:default'})$3"
+            "request().redirect_to('${1:/url}', {'${2:key}': '${3:value}'})"
         ],
-        "description": "Retrieve a cookie from the request."
+        "description": "Request redirect_to helper with params"
     },
-    "Request-allFiles.sublime-snippet": {
-        "prefix": "Request::allFiles",
+    "Request back": {
+		"scope": "python",
+		"prefix": "Request.back",
         "body": [
-            "\\$request->allFiles()"
+            "Request.back()"
         ],
-        "description": "Get an array of all of the files on the request."
+        "description": "Request back"
     },
-    "Request-file.sublime-snippet": {
-        "prefix": "Request::file",
+    "Request back helper": {
+		"scope": "python",
+		"prefix": "request().back",
         "body": [
-            "\\$request->file('${1:key}'${2:, 'default'})$2"
+            "request().back()"
         ],
-        "description": "Retrieve a file from the request."
+        "description": "Request back helper"
     },
-    "Request-hasFile.sublime-snippet": {
-        "prefix": "Request::hasFile",
+    "Request back URL": {
+		"scope": "python",
+		"prefix": "Request.back URL",
         "body": [
-            "\\$request->hasFile('${1:key}')$2"
+            "Request.back(default='${1:url}')"
         ],
-        "description": "Determine if the uploaded data contains a file."
+        "description": "Request back URL"
     },
-    "Request-hasHeader": {
-        "prefix": "Request::hasHeader",
+    "Request back URL helper": {
+		"scope": "python",
+		"prefix": "request().back URL",
         "body": [
-            "\\$request->hasHeader('${1:key}')$2"
+            "request().back(default='${1:url}')"
         ],
-        "description": "Determine if a header is set on the request."
+        "description": "Request back URL helper"
     },
-    "Request-header.sublime-snippet": {
-        "prefix": "Request::header",
+    "Request key": {
+		"scope": "python",
+		"prefix": "Request.key",
         "body": [
-            "\\$request->header('${1:key}', ${2:\\$default})$3"
+            "Request.key('${1:key}')"
         ],
-        "description": "Retrieve a header from the request."
+        "description": "Request key"
     },
-    "Request-server": {
-        "prefix": "Request::server",
+    "Request key helper": {
+		"scope": "python",
+		"prefix": "request().key",
         "body": [
-            "\\$request->server('${1:key}', ${2:\\$default})$3"
+            "request().key('${1:key}')"
         ],
-        "description": "Retrieve a server variable from the request."
+        "description": "Request key helper"
     },
-    "Request-old.sublime-snippet": {
-        "prefix": "Request::old",
+    "Request header": {
+		"scope": "python",
+		"prefix": "Request.header",
         "body": [
-            "\\$request->old('${1:key}'${2:, 'default'})$3"
+            "Request.header('${1:name}')"
         ],
-        "description": "Retrieve an old input item."
+        "description": "Request header"
     },
-    "Input-flash.sublime-snippet": {
-        "prefix": "Request::flash",
+    "Request header helper": {
+		"scope": "python",
+		"prefix": "request().header",
         "body": [
-            "\\$request->flash();"
+            "request().header('${1:name}')"
         ],
-        "description": "Flash Input to the Session"
+        "description": "Request header helper"
     },
-    "Input-flashOnly.sublime-snippet": {
-        "prefix": "Request::flashOnly",
+    "Request status": {
+		"scope": "python",
+		"prefix": "Request.status",
         "body": [
-            "\\$request->flashOnly(${1:\\$keys});$2"
+            "Request.status('${1:name}')"
         ],
-        "description": "Flash only some Input to the Session"
+        "description": "Request status"
     },
-    "Input-flashExcept.sublime-snippet": {
-        "prefix": "Request::flashExcept",
+    "Request status helper": {
+		"scope": "python",
+		"prefix": "request().status",
         "body": [
-            "\\$request->flashExcept(${1:\\$keys});$2"
+            "request().status('${1:name}')"
         ],
-        "description": "Flash only some Input to the Session"
+        "description": "Request status helper"
     },
-    "Request-flush": {
-        "prefix": "Request::flush",
+    "Request get_request_method": {
+		"scope": "python",
+		"prefix": "Request.get_request_method",
         "body": [
-            "\\$request->flush();"
+            "Request.get_request_method()"
         ],
-        "description": "Flush all of the old input from the session."
+        "description": "Request get_request_method"
     },
-    "Request-merge": {
-        "prefix": "Request::merge",
+    "Request get_request_method helper": {
+		"scope": "python",
+		"prefix": "request().get_request_method",
         "body": [
-            "\\$request->merge(${1:\\$input})$2"
+            "request().get_request_method()"
         ],
-        "description": "Merge new input into the current request's input array."
-    },
-    "Request-replace": {
-        "prefix": "Request::replace",
-        "body": [
-            "\\$request->replace(${1:\\$input})$2"
-        ],
-        "description": "Replace the input for the current request."
-    },
-    "Request-json.sublime-snippet": {
-        "prefix": "Request::json",
-        "body": [
-            "\\$request->json()"
-        ],
-        "description": "Determine if the request is sending JSON."
-    },
-    "Request-isJson": {
-        "prefix": "Request::isJson",
-        "body": [
-            "\\$request->isJson()"
-        ],
-        "description": "Determine if the request is sending JSON."
-    },
-    "Request-wantsJson": {
-        "prefix": "Request::wantsJson",
-        "body": [
-            "\\$request->wantsJson()"
-        ],
-        "description": "Determine if the current request is asking for JSON in return."
-    },
-    "Request-accepts": {
-        "prefix": "Request::accepts",
-        "body": [
-            "\\$request->accepts(${1:\\$contentTypes})$2"
-        ],
-        "description": "Determines whether the current requests accepts a given content type."
-    },
-    "Request-prefers": {
-        "prefix": "Request::prefers",
-        "body": [
-            "\\$request->prefers(${1:\\$contentTypes})$2"
-        ],
-        "description": "Return the most suitable content type from the given array based on content negotiation."
-    },
-    "Request-acceptsJson": {
-        "prefix": "Request::acceptsJson",
-        "body": [
-            "\\$request->acceptsJson()"
-        ],
-        "description": "Determines whether a request accepts JSON."
-    },
-    "Request-acceptsHtml": {
-        "prefix": "Request::acceptsHtml",
-        "body": [
-            "\\$request->acceptsHtml()"
-        ],
-        "description": "Determines whether a request accepts HTML."
-    },
-    "Request-format": {
-        "prefix": "Request::format",
-        "body": [
-            "\\$request->format('${1:html}')$2"
-        ],
-        "description": "Get the data format expected in the response."
-    },
-    "Request-bearerToken": {
-        "prefix": "Request::bearerToken",
-        "body": [
-            "\\$request->bearerToken()"
-        ],
-        "description": "Get the bearer token from the request headers."
-    },
-    "Request-session.sublime-snippet": {
-        "prefix": "Request::session",
-        "body": [
-            "\\$request->session()"
-        ],
-        "description": "Get the session associated with the request."
-    },
-    "Request-user.sublime-snippet": {
-        "prefix": "Request::user",
-        "body": [
-            "\\$request->user()"
-        ],
-        "description": "Get the user making the request."
-    },
-    "Request-route": {
-        "prefix": "Request::route",
-        "body": [
-            "\\$request->route(${1:\\$param})"
-        ],
-        "description": "Get the route handling the request."
-    },
-    "Request-fingerprint.sublime-snippet": {
-        "prefix": "Request::fingerprint",
-        "body": [
-            "\\$request->fingerprint()"
-        ],
-        "description": "Get a unique fingerprint for the request / route / IP address."
-    },
-    "Request-getUserResolver": {
-        "prefix": "Request::getUserResolver",
-        "body": [
-            "\\$request->getUserResolver()"
-        ],
-        "description": "Get the user resolver callback."
-    },
-    "Request-setUserResolver": {
-        "prefix": "Request::setUserResolver",
-        "body": [
-            "\\$request->setUserResolver(${1:\\$callback})$2"
-        ],
-        "description": "Set the user resolver callback."
-    },
-
-    "Request-getRouteResolver": {
-        "prefix": "Request::getRouteResolver",
-        "body": [
-            "\\$request->getRouteResolver()"
-        ],
-        "description": "Get the route resolver callback."
-    },
-    "Request-setRouteResolver": {
-        "prefix": "Request::setRouteResolver",
-        "body": [
-            "\\$request->setRouteResolver(${1:\\$callback})$2"
-        ],
-        "description": "Set the route resolver callback."
-    },
-    "Request-toArray": {
-        "prefix": "Request::toArray",
-        "body": [
-            "\\$request->toArray()"
-        ],
-        "description": "Get all of the input and files for the request."
-    },
-    "Request-offsetExists": {
-        "prefix": "Request::offsetExists",
-        "body": [
-            "\\$request->offsetExists('${1:offset}')$2"
-        ],
-        "description": "Determine if the given offset exists."
-    },
-    "Request-offsetSet": {
-        "prefix": "Request::offsetSet",
-        "body": [
-            "\\$request->offsetSet('${1:offset}', ${2:\\$value});$3"
-        ],
-        "description": "Set the value at the given offset."
-    },
-    "Request-offsetUnset": {
-        "prefix": "Request::offsetUnset",
-        "body": [
-            "\\$request->offsetUnset('${1:offset}');$2"
-        ],
-        "description": "Remove the value at the given offset."
+        "description": "Request get_request_method helper"
     }
 }
