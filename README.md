@@ -4,7 +4,7 @@
 
 ## Screenshot
 
-![Screenshot](./images/screenshot.gif)
+![Screenshot](images/screenshot.gif)
 
 ## Credits
 
