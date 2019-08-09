@@ -3,8 +3,6 @@
 		"scope": "python",
         "prefix": "RouteGroup",
         "body": [
-			"from masonite.routes import RouteGroup",
-			"",
 			"RouteGroup([",
 			"",
 			"],",

@@ -1,34 +1,34 @@
 {
-    "View helper": {
+    "view": {
 		"scope": "python",
 		"prefix": "view",
         "body": [
             "view('${1:name}')"
         ],
-        "description": "View helper"
+        "description": "view"
     },
-    "View Class": {
-		"scope": "python",
-		"prefix": "view",
-        "body": [
-            "View('${1:name}')"
-        ],
-        "description": "View Class"
-    },
-    "View with data": {
+    "view with data": {
 		"scope": "python",
 		"prefix": "view.param",
         "body": [
             "view('${1:name}', {'${2:param}': ${3:value}})"
         ],
-        "description": "View with data"
+        "description": "view with data"
     },
-    "View Class with data": {
+    "view sharing": {
 		"scope": "python",
-		"prefix": "View.param",
+		"prefix": "view.param",
         "body": [
-            "view('${1:name}', {'${2:param}': ${3:value}})"
+            "view.share({'${1:param}': ${2:value}})"
         ],
-        "description": "View Class with data"
+        "description": "view with data"
+    },
+    "view composer": {
+		"scope": "python",
+		"prefix": "view.param",
+        "body": [
+            "view.composer('${1:name}', {'${2:param}': ${3:value}})"
+        ],
+        "description": "view with data"
     }
 }

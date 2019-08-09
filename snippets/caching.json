@@ -1,66 +1,66 @@
 {
-    "Cache": {
+    "cache": {
 		"scope": "python",
-		"prefix": "Cache",
+		"prefix": "cache",
         "body": [
-            "Cache"
+            "cache"
         ],
-        "description": "Upload"
+        "description": "cache"
     },
-    "Cache store": {
+    "cache store": {
 		"scope": "python",
-		"prefix": "Cache.store",
+		"prefix": "cache.store",
         "body": [
-            "Cache.store('${1:key}', '${2:value}')"
+            "cache.store('${1:key}', '${2:value}')"
         ],
-        "description": "Cache store"
+        "description": "cache store"
     },
-    "Cache store_for": {
+    "cache store_for": {
 		"scope": "python",
-		"prefix": "Cache.store_for",
+		"prefix": "cache.store_for",
         "body": [
-            "Cache.store_for('${1:key}', '${2:value}', ${3:time}, '${4:seconds}')"
+            "cache.store_for('${1:key}', '${2:value}', ${3:time}, '${4:seconds}')"
         ],
-        "description": "Cache store_for"
+        "description": "cache store_for"
     },
-    "Cache get": {
+    "cache get": {
 		"scope": "python",
-		"prefix": "Cache.get",
+		"prefix": "cache.get",
         "body": [
-            "Cache.get('${1:key}')"
+            "cache.get('${1:key}')"
         ],
-        "description": "Cache get"
+        "description": "cache get"
     },
-    "Cache is_valid": {
+    "cache is_valid": {
 		"scope": "python",
-		"prefix": "Cache.is_valid",
+		"prefix": "cache.is_valid",
         "body": [
-            "Cache.is_valid('${1:key}')"
+            "cache.is_valid('${1:key}')"
         ],
-        "description": "Cache is_valid"
+        "description": "cache is_valid"
     },
-    "Cache cache_exists": {
+    "cache cache_exists": {
 		"scope": "python",
-		"prefix": "Cache.cache_exists",
+		"prefix": "cache.cache_exists",
         "body": [
-            "Cache.cache_exists('${1:key}')"
+            "cache.cache_exists('${1:key}')"
         ],
-        "description": "Cache cache_exists"
+        "description": "cache cache_exists"
     },
-    "Cache update": {
+    "cache update": {
 		"scope": "python",
-		"prefix": "Cache.update",
+		"prefix": "cache.update",
         "body": [
-            "Cache.update('${1:key}', '${2:value}')"
+            "cache.update('${1:key}', '${2:value}')"
         ],
-        "description": "Cache update"
+        "description": "cache update"
     },
-    "Cache delete": {
+    "cache delete": {
 		"scope": "python",
-		"prefix": "Cache.delete",
+		"prefix": "cache.delete",
         "body": [
-            "Cache.delete('${1:key}')"
+            "cache.delete('${1:key}')"
         ],
-        "description": "Cache delete"
+        "description": "cache delete"
     }
 }

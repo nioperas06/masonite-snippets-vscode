@@ -7,60 +7,60 @@
         ],
         "description": "Session"
     },
-    "Session set": {
+    "request session set": {
 		"scope": "python",
-		"prefix": "Session.set",
+		"prefix": "request.session.set",
         "body": [
-            "Session.set('${1:key}', '${2:value}')"
+            "request.session.set('${1:key}', '${2:value}')"
         ],
-        "description": "Session set"
+        "description": "request.session.set"
     },
-    "Session set object": {
+    "request session set object": {
 		"scope": "python",
-		"prefix": "Session.set object",
+		"prefix": "request.session.set object",
         "body": [
-            "Session.set('${1:key}', {'${2:key}', '${3:value}'})"
+            "request.session.set('${1:key}', {'${2:key}', '${3:value}'})"
         ],
-        "description": "Session set object"
+        "description": "request.session.set object"
     },
-    "Session get": {
+    "request session get": {
 		"scope": "python",
-		"prefix": "Session.get",
+		"prefix": "request.session.get",
         "body": [
-            "Session.get('${1:key}', '${2:value}')"
+            "request.session.get('${1:key}', '${2:value}')"
         ],
-        "description": "Session get"
+        "description": "request.session.get"
     },
-    "Session has": {
+    "request session has": {
 		"scope": "python",
-		"prefix": "Session.has",
+		"prefix": "request.session.has",
         "body": [
-            "Session.has('${1:key}')"
+            "request.session.has('${1:key}')"
         ],
-        "description": "Session has"
+        "description": "request.session.has"
     },
-    "Session all": {
+    "request session all": {
 		"scope": "python",
-		"prefix": "Session.all",
+		"prefix": "request.session.all",
         "body": [
-            "Session.all()"
+            "request.session.all()"
         ],
-        "description": "Session all"
+        "description": "request.session.all"
     },
-    "Session flash": {
+    "request session flash": {
 		"scope": "python",
-		"prefix": "Session.flash",
+		"prefix": "request.session.flash",
         "body": [
-            "Session.flash('${1:key}', '${2:value}')"
+            "request.session.flash('${1:key}', '${2:value}')"
         ],
-        "description": "Session flash"
+        "description": "request.session.flash"
     },
-    "Session reset": {
+    "request session reset": {
 		"scope": "python",
-		"prefix": "Session.reset",
+		"prefix": "request.session.reset",
         "body": [
-            "Session.reset()"
+            "request.session.reset()"
         ],
-        "description": "Session reset"
+        "description": "request.session.reset"
     }
 }

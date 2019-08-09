@@ -1,34 +1,42 @@
 {
-    "Mail to": {
+    "mail to": {
 		"scope": "python",
-		"prefix": "Mail.to",
+		"prefix": "mail.to",
         "body": [
-            "Mail.to('${1:hello@email.com}').send('${2:Welcome!}')"
+            "mail.to('${1:hello@email.com}').send('${2:Welcome!}')"
         ],
-        "description": "Mail to"
+        "description": "mail to"
     },
-    "Mail subject": {
+    "mail subject": {
 		"scope": "python",
-		"prefix": "Mail.subject",
+		"prefix": "mail.subject",
         "body": [
-            "Mail.subject('${1:Welcome!}').to('${2:hello@email.com}').send('${3:Welcome!}')"
+            "mail.subject('${1:Welcome!}').to('${2:hello@email.com}').send('${3:Welcome!}')"
         ],
-        "description": "Mail subject"
+        "description": "mail subject"
     },
-    "Mail send_from": {
+    "mail send_from": {
 		"scope": "python",
-		"prefix": "Mail.send_from",
+		"prefix": "mail.send_from",
         "body": [
-            "Mail.send_from('${1:Welcome!}').to('${2:hello@email.com}').send('${3:Welcome!}')"
+            "mail.send_from('${1:Welcome!}').to('${2:hello@email.com}').send('${3:Welcome!}')"
         ],
-        "description": "Mail send_from"
+        "description": "mail send_from"
     },
-    "Mail template": {
+    "mail template": {
 		"scope": "python",
-		"prefix": "Mail.template",
+		"prefix": "mail.template",
         "body": [
-            "Mail.to('${1:hello@email.com}').template('${2:mail/welcome}').send()"
+            "mail.to('${1:hello@email.com}').template('${2:mail/welcome}').send()"
         ],
         "description": "Mail template"
+    },
+    "mail queue": {
+		"scope": "python",
+		"prefix": "mail.queue",
+        "body": [
+            "mail.to('${1:hello@email.com}').queue().send()"
+        ],
+        "description": "Mail queue"
     }
 }

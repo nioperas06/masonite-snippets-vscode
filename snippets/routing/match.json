@@ -1,0 +1,10 @@
+{
+    "Match Route": {
+		"scope": "python",
+		"prefix": "Match",
+        "body": [
+            "Match(['${1:request}']).route('${2:url}', '${3:Controller}@${4:method}'),"
+        ],
+        "description": "Match Route"
+	}
+}

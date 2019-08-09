@@ -1,306 +1,186 @@
 {
-    "Request input": {
+    "request input": {
 		"scope": "python",
-		"prefix": "Request.input",
+		"prefix": "request.input",
         "body": [
-            "Request.input('${1:name}')"
+            "request.input('${1:name}')"
         ],
-        "description": "Request input"
+        "description": "request input"
     },
-    "Request input helper": {
+    "request all": {
 		"scope": "python",
-		"prefix": "request().input",
+		"prefix": "request.all",
         "body": [
-            "request().input('${1:name}')"
+            "request.all()"
         ],
-        "description": "Request input helper"
+        "description": "request all"
     },
-    "Request all": {
+    "request has": {
 		"scope": "python",
-		"prefix": "Request.all",
+		"prefix": "request.has",
         "body": [
-            "Request.all()"
+            "request.has('${1:name}')"
         ],
-        "description": "Request all"
+        "description": "request has"
     },
-    "Request all helper": {
+    "request only": {
 		"scope": "python",
-		"prefix": "request().all",
+		"prefix": "request.only",
         "body": [
-            "request().all()"
+            "request.only('${1:name}')"
         ],
-        "description": "Request all helper"
+        "description": "request only"
     },
-    "Request has": {
+    "request param": {
 		"scope": "python",
-		"prefix": "Request.has",
+		"prefix": "request.param",
         "body": [
-            "Request.has('${1:name}')"
+            "request.param('${1:name}')"
         ],
-        "description": "Request has"
+        "description": "request param"
     },
-    "Request has helper": {
+    "request cookie": {
 		"scope": "python",
-		"prefix": "request().has",
+		"prefix": "request.cookie",
         "body": [
-            "request().has('${1:name}')"
+            "request.cookie('${1:key}', '${2:value}')"
         ],
-        "description": "Request has helper"
+        "description": "request cookie"
     },
-    "Request only": {
+    "request get_cookies": {
 		"scope": "python",
-		"prefix": "Request.only",
+		"prefix": "request.get_cookies",
         "body": [
-            "Request.only('${1:name}')"
+            "request.get_cookies()"
         ],
-        "description": "Request only"
+        "description": "request get_cookies"
     },
-    "Request only helper": {
+    "request get_cookie": {
 		"scope": "python",
-		"prefix": "request().only",
+		"prefix": "request.get_cookie",
         "body": [
-            "request().only('${1:name}')"
+            "request.get_cookie('${1:name}')"
         ],
-        "description": "Request only helper"
+        "description": "request get_cookie"
     },
-    "Request param": {
+    "request delete_cookie": {
 		"scope": "python",
-		"prefix": "Request.param",
+		"prefix": "request.delete_cookie",
         "body": [
-            "Request.param('${1:name}')"
+            "request.delete_cookie('${1:name}')"
         ],
-        "description": "Request param"
+        "description": "request delete_cookie"
     },
-    "Request param helper": {
+    "request user": {
 		"scope": "python",
-		"prefix": "request().param",
+		"prefix": "request.user",
         "body": [
-            "request().param('${1:name}')"
+            "request.user()"
         ],
-        "description": "Request param helper"
+        "description": "request user"
     },
-    "Request cookie": {
+    "request redirect": {
 		"scope": "python",
-		"prefix": "Request.cookie",
+		"prefix": "request.redirect",
         "body": [
-            "Request.cookie('${1:key}', '${2:value}')"
+            "request.redirect('${1:/url}')"
         ],
-        "description": "Request cookie"
+        "description": "request redirect"
     },
-    "Request cookie helper": {
+    "request redirect_to": {
 		"scope": "python",
-		"prefix": "request().cookie",
+		"prefix": "request.redirect_to",
         "body": [
-            "request().cookie('${1:key}', '${2:value}')"
+            "request.redirect_to('${1:/url}')"
         ],
-        "description": "Request cookie helper"
+        "description": "request redirect_to"
     },
-    "Request get_cookies": {
+    "request redirect_to with params": {
 		"scope": "python",
-		"prefix": "Request.get_cookies",
+		"prefix": "request.redirect_to with params",
         "body": [
-            "Request.get_cookies()"
+            "request.redirect_to('${1:/url}', {'${2:key}': '${3:value}'})"
         ],
-        "description": "Request get_cookies"
+        "description": "request redirect_to with params"
     },
-    "Request get_cookies helper": {
+    "request back": {
 		"scope": "python",
-		"prefix": "request().get_cookies",
+		"prefix": "request.back",
         "body": [
-            "request().get_cookies()"
+            "request.back()"
         ],
-        "description": "Request get_cookies helper"
+        "description": "request back"
     },
-    "Request get_cookie": {
+    "request back URL": {
 		"scope": "python",
-		"prefix": "Request.get_cookie",
+		"prefix": "request.back URL",
         "body": [
-            "Request.get_cookie('${1:name}')"
+            "request.back(default='${1:url}')"
         ],
-        "description": "Request get_cookie"
+        "description": "request back URL"
     },
-    "Request get_cookie helper": {
+    "request key": {
 		"scope": "python",
-		"prefix": "request().get_cookie",
+		"prefix": "request.key",
         "body": [
-            "request().get_cookie('${1:name}')"
+            "request.key('${1:key}')"
         ],
-        "description": "Request get_cookie helper"
+        "description": "request key"
     },
-    "Request delete_cookie": {
+    "request header": {
 		"scope": "python",
-		"prefix": "Request.delete_cookie",
+		"prefix": "request.header",
         "body": [
-            "Request.delete_cookie('${1:name}')"
+            "request.header('${1:name}', '${1:value}')"
         ],
-        "description": "Request delete_cookie"
+        "description": "request header"
     },
-    "Request delete_cookie helper": {
+    "request status": {
 		"scope": "python",
-		"prefix": "Request.delete_cookie",
+		"prefix": "request.status",
         "body": [
-            "request().delete_cookie('${1:name}')"
+            "request.status('${1:name}')"
         ],
-        "description": "Request delete_cookie helper"
+        "description": "request status"
     },
-    "Request user": {
+    "request get_request_method": {
 		"scope": "python",
-		"prefix": "Request.user",
+		"prefix": "request.get_request_method",
         "body": [
-            "Request.user()"
+            "request.get_request_method()"
         ],
-        "description": "Request user"
+        "description": "request get_request_method"
     },
-    "Request user helper": {
+    "request without": {
 		"scope": "python",
-		"prefix": "request().user",
+		"prefix": "request.without",
         "body": [
-            "request().user()"
+            "request.without('${1:name}')"
         ],
-        "description": "Request user helper"
+        "description": "request without"
     },
-    "Request redirect": {
+    "request route": {
 		"scope": "python",
-		"prefix": "Request.redirect",
+		"prefix": "request.route",
         "body": [
-            "Request.redirect('${1:/url}')"
+            "request.route('${1:name}')"
         ],
-        "description": "Request redirect"
+        "description": "request route"
     },
-    "Request redirect helper": {
+    "request contains": {
 		"scope": "python",
-		"prefix": "request().redirect",
+		"prefix": "request.contains",
         "body": [
-            "request().redirect('${1:/url}')"
+            "request.contains('${1:name}')"
         ],
-        "description": "Request redirect helper"
+        "description": "request contains"
     },
-    "Request redirect_to": {
+    "request path": {
 		"scope": "python",
-		"prefix": "Request.redirect_to",
+		"prefix": "request.path",
         "body": [
-            "Request.redirect_to('${1:/url}')"
+            "request.path"
         ],
-        "description": "Request redirect_to"
-    },
-    "Request redirect_to helper": {
-		"scope": "python",
-		"prefix": "request().redirect_to",
-        "body": [
-            "request().redirect_to('${1:/url}')"
-        ],
-        "description": "Request redirect_to helper"
-    },
-    "Request redirect_to with params": {
-		"scope": "python",
-		"prefix": "Request.redirect_to with params",
-        "body": [
-            "Request.redirect_to('${1:/url}', {'${2:key}': '${3:value}'})"
-        ],
-        "description": "Request redirect_to with params"
-    },
-    "Request redirect_to helper with params": {
-		"scope": "python",
-		"prefix": "request().redirect_to with params",
-        "body": [
-            "request().redirect_to('${1:/url}', {'${2:key}': '${3:value}'})"
-        ],
-        "description": "Request redirect_to helper with params"
-    },
-    "Request back": {
-		"scope": "python",
-		"prefix": "Request.back",
-        "body": [
-            "Request.back()"
-        ],
-        "description": "Request back"
-    },
-    "Request back helper": {
-		"scope": "python",
-		"prefix": "request().back",
-        "body": [
-            "request().back()"
-        ],
-        "description": "Request back helper"
-    },
-    "Request back URL": {
-		"scope": "python",
-		"prefix": "Request.back URL",
-        "body": [
-            "Request.back(default='${1:url}')"
-        ],
-        "description": "Request back URL"
-    },
-    "Request back URL helper": {
-		"scope": "python",
-		"prefix": "request().back URL",
-        "body": [
-            "request().back(default='${1:url}')"
-        ],
-        "description": "Request back URL helper"
-    },
-    "Request key": {
-		"scope": "python",
-		"prefix": "Request.key",
-        "body": [
-            "Request.key('${1:key}')"
-        ],
-        "description": "Request key"
-    },
-    "Request key helper": {
-		"scope": "python",
-		"prefix": "request().key",
-        "body": [
-            "request().key('${1:key}')"
-        ],
-        "description": "Request key helper"
-    },
-    "Request header": {
-		"scope": "python",
-		"prefix": "Request.header",
-        "body": [
-            "Request.header('${1:name}')"
-        ],
-        "description": "Request header"
-    },
-    "Request header helper": {
-		"scope": "python",
-		"prefix": "request().header",
-        "body": [
-            "request().header('${1:name}')"
-        ],
-        "description": "Request header helper"
-    },
-    "Request status": {
-		"scope": "python",
-		"prefix": "Request.status",
-        "body": [
-            "Request.status('${1:name}')"
-        ],
-        "description": "Request status"
-    },
-    "Request status helper": {
-		"scope": "python",
-		"prefix": "request().status",
-        "body": [
-            "request().status('${1:name}')"
-        ],
-        "description": "Request status helper"
-    },
-    "Request get_request_method": {
-		"scope": "python",
-		"prefix": "Request.get_request_method",
-        "body": [
-            "Request.get_request_method()"
-        ],
-        "description": "Request get_request_method"
-    },
-    "Request get_request_method helper": {
-		"scope": "python",
-		"prefix": "request().get_request_method",
-        "body": [
-            "request().get_request_method()"
-        ],
-        "description": "Request get_request_method helper"
+        "description": "request path"
     }
 }

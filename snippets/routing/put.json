@@ -1,71 +1,17 @@
 {
-    "PUT Route hepler": {
+    "PUT Route": {
 		"scope": "python",
-		"prefix": "put",
+		"prefix": "Put",
         "body": [
-            "from masonite.helpers.routes import put",
-            "",
-            "put('/${1:url/here}', '${2:Controller}@${3:method}'),"
-        ],
-        "description": "PUT Route hepler"
-	},
-	"PUT named Route hepler": {
-		"scope": "python",
-		"prefix": "put.name",
-        "body": [
-            "from masonite.helpers.routes import put",
-            "",
-            "put('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
-        ],
-        "description": "PUT named Route hepler"
-	},
-	"PUT Route hepler with middleware": {
-		"scope": "python",
-		"prefix": "put.middleware",
-        "body": [
-            "from masonite.helpers.routes import put",
-            "",
-            "put('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
-        ],
-        "description": "PUT Route hepler with middleware"
-	},
-	"PUT named Route hepler with middleware - 1": {
-		"scope": "python",
-		"prefix": "put.middleware.name",
-        "body": [
-            "from masonite.helpers.routes import put",
-            "",
-            "put('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
-        ],
-        "description": "PUT named Route hepler with middleware - 1"
-    },
-    "PUT named Route hepler with middleware - 2": {
-		"scope": "python",
-		"prefix": "put.name.middleware",
-        "body": [
-            "from masonite.helpers.routes import put",
-            "",
-            "put('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
-        ],
-        "description": "PUT named Route hepler with middleware - 2"
-	},
-	"PUT Route": {
-		"scope": "python",
-        "prefix": "Put",
-        "body": [
-            "from masonite.routes import Put",
-            "",
-            "Put().route('/${1:url/here}', '${2:Controller}@${3:method}'),"
+            "Put('/${1:url/here}', '${2:Controller}@${3:method}'),"
         ],
         "description": "PUT Route"
-    },
+	},
 	"PUT named Route": {
 		"scope": "python",
 		"prefix": "Put.name",
         "body": [
-            "from masonite.routes import Put",
-            "",
-            "Put().route('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
+            "Put('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
         ],
         "description": "PUT named Route"
 	},
@@ -73,9 +19,7 @@
 		"scope": "python",
 		"prefix": "Put.middleware",
         "body": [
-            "from masonite.routes import Put",
-            "",
-            "Put().route('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
+            "Put('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
         ],
         "description": "PUT Route with middleware"
 	},
@@ -83,9 +27,7 @@
 		"scope": "python",
 		"prefix": "Put.middleware.name",
         "body": [
-            "from masonite.routes import Put",
-            "",
-            "Put().route('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
+            "Put('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
         ],
         "description": "PUT named Route with middleware - 1"
     },
@@ -93,9 +35,7 @@
 		"scope": "python",
 		"prefix": "Put.name.middleware",
         "body": [
-            "from masonite.routes import Put",
-            "",
-            "Put().route('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
+            "Put('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
         ],
         "description": "PUT named Route with middleware - 2"
 	}

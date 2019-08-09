@@ -1,71 +1,17 @@
 {
-    "DELETE Route helper": {
+    "DELETE Route": {
 		"scope": "python",
-		"prefix": "delete",
+		"prefix": "Delete",
         "body": [
-            "from masonite.helpers.routes import delete",
-            "",
-            "delete('/${1:url/here}', '${2:Controller}@${3:method}'),"
-        ],
-        "description": "DELETE Route helper"
-	},
-	"DELETE named Route helper": {
-		"scope": "python",
-		"prefix": "delete.name",
-        "body": [
-            "from masonite.helpers.routes import delete",
-            "",
-            "delete('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
-        ],
-        "description": "DELETE named Route helper"
-	},
-	"DELETE Route helper with middleware": {
-		"scope": "python",
-		"prefix": "delete.middleware",
-        "body": [
-            "from masonite.helpers.routes import delete",
-            "",
-            "delete('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
-        ],
-        "description": "DELETE Route helper with middleware"
-	},
-	"DELETE named Route helper with middleware - 1": {
-		"scope": "python",
-		"prefix": "delete.middleware.name",
-        "body": [
-            "from masonite.helpers.routes import delete",
-            "",
-            "delete('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
-        ],
-        "description": "DELETE named Route helper with middleware - 1"
-    },
-    "DELETE named Route helper with middleware - 2": {
-		"scope": "python",
-		"prefix": "delete.name.middleware",
-        "body": [
-            "from masonite.helpers.routes import delete",
-            "",
-            "delete('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
-        ],
-        "description": "DELETE named Route helper with middleware - 2"
-	},
-	"DELETE Route": {
-		"scope": "python",
-        "prefix": "Delete",
-        "body": [
-            "from masonite.routes import Delete",
-            "",
-            "Delete().route('/${1:url/here}', '${2:Controller}@${3:method}'),"
+            "Delete('/${1:url/here}', '${2:Controller}@${3:method}'),"
         ],
         "description": "DELETE Route"
-    },
+	},
 	"DELETE named Route": {
 		"scope": "python",
 		"prefix": "Delete.name",
         "body": [
-            "from masonite.routes import Delete",
-            "",
-            "Delete().route('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
+            "Delete('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
         ],
         "description": "DELETE named Route"
 	},
@@ -73,9 +19,7 @@
 		"scope": "python",
 		"prefix": "Delete.middleware",
         "body": [
-            "from masonite.routes import Delete",
-            "",
-            "Delete().route('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
+            "Delete('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
         ],
         "description": "DELETE Route with middleware"
 	},
@@ -83,9 +27,7 @@
 		"scope": "python",
 		"prefix": "Delete.middleware.name",
         "body": [
-            "from masonite.routes import Delete",
-            "",
-            "Delete().route('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
+            "Delete('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
         ],
         "description": "DELETE named Route with middleware - 1"
     },
@@ -93,10 +35,8 @@
 		"scope": "python",
 		"prefix": "Delete.name.middleware",
         "body": [
-            "from masonite.routes import Delete",
-            "",
-            "Delete().route('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
+            "Delete('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
         ],
-        "description": "DELETE named Route with middleware - 2"
+        "description": "DELETE named Route helper with middleware - 2"
 	}
 }

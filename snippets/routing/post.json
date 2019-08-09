@@ -1,71 +1,17 @@
 {
-    "POST Route helper": {
+    "POST Route": {
 		"scope": "python",
-		"prefix": "post",
+		"prefix": "Post",
         "body": [
-            "from masonite.helpers.routes import post",
-            "",
-            "post('/${1:url/here}', '${2:Controller}@${3:method}'),"
-        ],
-        "description": "POST Route helper"
-	},
-	"POST named Route helper": {
-		"scope": "python",
-		"prefix": "post.name",
-        "body": [
-            "from masonite.helpers.routes import post",
-            "",
-            "post('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
-        ],
-        "description": "POST named Route helper"
-	},
-	"POST Route helper with middleware": {
-		"scope": "python",
-		"prefix": "post.middleware",
-        "body": [
-            "from masonite.helpers.routes import post",
-            "",
-            "post('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
-        ],
-        "description": "POST Route helper with middleware"
-	},
-	"POST named Route helper with middleware - 1": {
-		"scope": "python",
-		"prefix": "post.middleware.name",
-        "body": [
-            "from masonite.helpers.routes import post",
-            "",
-            "post('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
-        ],
-        "description": "POST named Route helper with middleware"
-    },
-    "POST named Route helper with middleware - 2": {
-		"scope": "python",
-		"prefix": "post.name.middleware",
-        "body": [
-            "from masonite.helpers.routes import post",
-            "",
-            "post('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
-        ],
-        "description": "POST named Route helper with middleware - 2"
-	},
-	"POST Route": {
-		"scope": "python",
-        "prefix": "Post",
-        "body": [
-            "from masonite.routes import Post",
-            "",
-            "Post().route('/${1:url/here}', '${2:Controller}@${3:method}'),"
+            "Post('/${1:url/here}', '${2:Controller}@${3:method}'),"
         ],
         "description": "POST Route"
-    },
+	},
 	"POST named Route": {
 		"scope": "python",
 		"prefix": "Post.name",
         "body": [
-            "from masonite.routes import Post",
-            "",
-            "Post().route('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
+            "Post('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
         ],
         "description": "POST named Route"
 	},
@@ -73,9 +19,7 @@
 		"scope": "python",
 		"prefix": "Post.middleware",
         "body": [
-            "from masonite.routes import Post",
-            "",
-            "Post().route('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
+            "Post('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
         ],
         "description": "POST Route with middleware"
 	},
@@ -83,19 +27,15 @@
 		"scope": "python",
 		"prefix": "Post.middleware.name",
         "body": [
-            "from masonite.routes import Post",
-            "",
-            "Post().route('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
+            "Post('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
         ],
-        "description": "POST named Route with middleware - 1"
+        "description": "POST named Route with middleware"
     },
     "POST named Route with middleware - 2": {
 		"scope": "python",
 		"prefix": "Post.name.middleware",
         "body": [
-            "from masonite.routes import Post",
-            "",
-            "Post().route('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
+            "Post('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
         ],
         "description": "POST named Route with middleware - 2"
 	}

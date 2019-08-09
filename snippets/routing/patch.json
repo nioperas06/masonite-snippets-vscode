@@ -1,71 +1,17 @@
 {
-    "PATCH Route helper": {
+    "PATCH Route": {
 		"scope": "python",
-		"prefix": "patch",
+		"prefix": "Patch",
         "body": [
-            "from masonite.helpers.routes import patch",
-            "",
-            "patch('/${1:url/here}', '${2:Controller}@${3:method}'),"
-        ],
-        "description": "PATCH Route helper"
-	},
-	"PATCH named Route helper": {
-		"scope": "python",
-		"prefix": "patch.name",
-        "body": [
-            "from masonite.helpers.routes import patch",
-            "",
-            "patch('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
-        ],
-        "description": "PATCH named Route helper"
-	},
-	"PATCH Route helper with middleware": {
-		"scope": "python",
-		"prefix": "patch.middleware",
-        "body": [
-            "from masonite.helpers.routes import patch",
-            "",
-            "patch('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
-        ],
-        "description": "PATCH Route helper with middleware"
-	},
-	"PATCH named Route helper with middleware - 1": {
-		"scope": "python",
-		"prefix": "patch.middleware.name",
-        "body": [
-            "from masonite.helpers.routes import patch",
-            "",
-            "patch('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
-        ],
-        "description": "PATCH named Route helper with middleware - 1"
-    },
-    "PATCH named Route helper with middleware": {
-		"scope": "python",
-		"prefix": "patch.name.middleware",
-        "body": [
-            "from masonite.helpers.routes import patch",
-            "",
-            "patch('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
-        ],
-        "description": "PATCH named Route helper with middleware - 2"
-	},
-	"PATCH Route": {
-		"scope": "python",
-        "prefix": "Patch",
-        "body": [
-            "from masonite.routes import Patch",
-            "",
-            "Patch().route('/${1:url/here}', '${2:Controller}@${3:method}'),"
+            "Patch('/${1:url/here}', '${2:Controller}@${3:method}'),"
         ],
         "description": "PATCH Route"
-    },
+	},
 	"PATCH named Route": {
 		"scope": "python",
 		"prefix": "Patch.name",
         "body": [
-            "from masonite.routes import Patch",
-            "",
-            "Patch().route('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
+            "Patch('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
         ],
         "description": "PATCH named Route"
 	},
@@ -73,9 +19,7 @@
 		"scope": "python",
 		"prefix": "Patch.middleware",
         "body": [
-            "from masonite.routes import Patch",
-            "",
-            "Patch().route('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
+            "Patch('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
         ],
         "description": "PATCH Route with middleware"
 	},
@@ -83,9 +27,7 @@
 		"scope": "python",
 		"prefix": "Patch.middleware.name",
         "body": [
-            "from masonite.routes import Patch",
-            "",
-            "Patch().route('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
+            "Patch('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
         ],
         "description": "PATCH named Route with middleware - 1"
     },
@@ -93,9 +35,7 @@
 		"scope": "python",
 		"prefix": "Patch.name.middleware",
         "body": [
-            "from masonite.routes import Patch",
-            "",
-            "Patch().route('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
+            "Patch('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
         ],
         "description": "PATCH named Route with middleware - 2"
 	}

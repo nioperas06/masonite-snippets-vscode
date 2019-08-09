@@ -1,34 +1,34 @@
 {
-    "Broadcast": {
+    "broadcast": {
 		"scope": "python",
-		"prefix": "Broadcast",
+		"prefix": "broadcast",
         "body": [
-            "Broadcast"
+            "broadcast"
         ],
-        "description": "Broadcast"
+        "description": "broadcast"
     },
-    "Broadcast driver": {
+    "broadcast driver": {
 		"scope": "python",
-		"prefix": "Broadcast.driver",
+		"prefix": "broadcast.driver",
         "body": [
-            "Broadcast.driver('${1:value}')"
+            "broadcast.driver('${1:value}')"
         ],
-        "description": "Broadcast driver"
+        "description": "broadcast driver"
     },
-    "Broadcast channel": {
+    "broadcast channel": {
 		"scope": "python",
-		"prefix": "Broadcast.channel",
+		"prefix": "broadcast.channel",
         "body": [
-            "Broadcast.channel('${1:channel_name}', '${2:message}')"
+            "broadcast.channel('${1:channel_name}', '${2:message}')"
         ],
-        "description": "Broadcast channel"
+        "description": "broadcast channel"
     },
-    "Broadcast driver channel": {
+    "broadcast driver channel": {
 		"scope": "python",
-		"prefix": "Broadcast.driver.channel",
+		"prefix": "broadcast.driver.channel",
         "body": [
-            "Broadcast.driver('${1:value}').channel('${2:channel_name}', '${3:message}')"
+            "broadcast.driver('${1:value}').channel('${2:channel_name}', '${3:message}')"
         ],
-        "description": "Broadcast driver channel"
+        "description": "broadcast driver channel"
     }
 }

@@ -1,10 +1,18 @@
 {
-    "Upload": {
+    "upload driver": {
 		"scope": "python",
-		"prefix": "Upload.driver",
+		"prefix": "upload.driver",
         "body": [
-            "Upload.driver('${1:name}').store(${2:Request.input('file_upload')})"
+            "upload.driver('${1:name}').store(${2:request.input('file_upload')})"
         ],
-        "description": "Upload"
+        "description": "upload driver"
+    },
+    "upload accept": {
+		"scope": "python",
+		"prefix": "upload.accept",
+        "body": [
+            "upload.accept('${1:name}').store('${2:value}')"
+        ],
+        "description": "upload accept"
     }
 }

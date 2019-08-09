@@ -1,4 +1,20 @@
 {
+    "event subscribe": {
+		"scope": "python",
+		"prefix": "event.subscribe",
+        "body": [
+            "event.subscribe('${1:event}')"
+        ],
+        "description": "event subscribe"
+    },
+    "event listen": {
+		"scope": "python",
+		"prefix": "event.listen",
+        "body": [
+            "event.listen('${1:event}')"
+        ],
+        "description": "event listen"
+    },
     "event fire": {
 		"scope": "python",
 		"prefix": "event.fire",

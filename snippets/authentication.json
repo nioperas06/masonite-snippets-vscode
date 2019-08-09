@@ -1,25 +1,49 @@
 {
-    "Auth login": {
+    "auth login": {
 		"scope": "python",
-		"prefix": "Auth().login",
+		"prefix": "auth.login",
         "body": [
-            "Auth(${1:Request}).login('${2:user@email.com}', '${3:password}')"
+            "auth.login('${1:user@email.com}', '${2:password}')"
         ],
-        "description": "Auth login"
+        "description": "auth login"
     },
-    "Auth user": {
+    "auth user": {
 		"scope": "python",
-		"prefix": "Auth().user",
+		"prefix": "auth.user",
         "body": [
-            "Auth(${1:Request}).user()"
+            "auth.user()"
         ],
-        "description": "Auth user"
+        "description": "auth user"
     },
-    "Auth logout": {
+    "request user": {
 		"scope": "python",
-		"prefix": "Auth().user",
+		"prefix": "request.user",
         "body": [
-            "Auth(${1:Request}).logout()"
+            "request.user()"
+        ],
+        "description": "request.user"
+    },
+    "login once": {
+		"scope": "python",
+		"prefix": "auth.once.login",
+        "body": [
+            "auth.once().login('${1:user@email.com}', '${2:password}')"
+        ],
+        "description": "auth.once.login"
+    },
+    "register user": {
+		"scope": "python",
+		"prefix": "auth.register",
+        "body": [
+            "auth.register('${1:user@email.com}', '${2:password}', '${3:name}')"
+        ],
+        "description": "auth.register"
+    },
+    "auth logout": {
+		"scope": "python",
+		"prefix": "auth.logout",
+        "body": [
+            "auth.logout()"
         ],
         "description": "Auth logout"
     }

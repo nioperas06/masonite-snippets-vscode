@@ -1,0 +1,226 @@
+{
+    "accepted": {
+		"scope": "python",
+		"prefix": "accepted",
+        "body": [
+            "accepted('${1:value}')"
+        ],
+        "description": "accepted"
+    },
+    "active_domain": {
+		"scope": "python",
+		"prefix": "active_domain",
+        "body": [
+            "active_domain('${1:value}')"
+        ],
+        "description": "active_domain"
+    },
+    "after_today": {
+		"scope": "python",
+		"prefix": "after_today",
+        "body": [
+            "after_today('${1:value}')"
+        ],
+        "description": "after_today"
+    },
+    "before_today": {
+		"scope": "python",
+		"prefix": "before_today",
+        "body": [
+            "before_today('${1:value}')"
+        ],
+        "description": "before_today"
+    },
+    "contains": {
+		"scope": "python",
+		"prefix": "contains",
+        "body": [
+            "contains('${1:value}')"
+        ],
+        "description": "contains"
+    },
+    "does_not": {
+		"scope": "python",
+		"prefix": "does_not",
+        "body": [
+            "does_not('${1:value}')"
+        ],
+        "description": "does_not"
+    },
+    "equals": {
+		"scope": "python",
+		"prefix": "equals",
+        "body": [
+            "equals('${1:value}')"
+        ],
+        "description": "equals"
+    },
+    "email": {
+		"scope": "python",
+		"prefix": "email",
+        "body": [
+            "email('${1:value}')"
+        ],
+        "description": "email"
+    },
+    "exists": {
+		"scope": "python",
+		"prefix": "exists",
+        "body": [
+            "exists('${1:value}')"
+        ],
+        "description": "exists"
+    },
+    "greater_than": {
+		"scope": "python",
+		"prefix": "greater_than",
+        "body": [
+            "greater_than('${1:value}')"
+        ],
+        "description": "greater_than"
+    },
+    "in_range": {
+		"scope": "python",
+		"prefix": "in_range",
+        "body": [
+            "in_range('${1:value}', min=${2:value}, max=${3:value})"
+        ],
+        "description": "in_range"
+    },
+    "ip": {
+		"scope": "python",
+		"prefix": "ip",
+        "body": [
+            "ip('${1:value}')"
+        ],
+        "description": "ip"
+    },
+    "is_in": {
+		"scope": "is_in",
+		"prefix": "is_in",
+        "body": [
+            "is_in('${1:value}', ${1:in})"
+        ],
+        "description": "is_in"
+    },
+    "isnt": {
+		"scope": "isnt",
+		"prefix": "isnt",
+        "body": [
+            "isnt('${1:value}')"
+        ],
+        "description": "isnt"
+    },
+    "is_future": {
+		"scope": "is_future",
+		"prefix": "is_future",
+        "body": [
+            "is_future('${1:value}')"
+        ],
+        "description": "is_future"
+    },
+    "is_past": {
+		"scope": "is_past",
+		"prefix": "is_past",
+        "body": [
+            "is_past('${1:value}')"
+        ],
+        "description": "is_past"
+    },
+    "json": {
+		"scope": "json",
+		"prefix": "json",
+        "body": [
+            "json('${1:value}')"
+        ],
+        "description": "json"
+    },
+    "length": {
+		"scope": "length",
+		"prefix": "length",
+        "body": [
+            "length('${1:value}', min=${2:min}, max=${3:max})"
+        ],
+        "description": "length"
+    },
+    "less_than": {
+		"scope": "less_than",
+		"prefix": "less_than",
+        "body": [
+            "less_than('${1:value}')"
+        ],
+        "description": "less_than"
+    },
+    "none": {
+		"scope": "none",
+		"prefix": "none",
+        "body": [
+            "none('${1:value}')"
+        ],
+        "description": "none"
+    },
+    "numeric": {
+		"scope": "numeric",
+		"prefix": "numeric",
+        "body": [
+            "numeric('${1:value}')"
+        ],
+        "description": "numeric"
+    },
+    "one_of": {
+		"scope": "one_of",
+		"prefix": "one_of",
+        "body": [
+            "one_of('${1:value}')"
+        ],
+        "description": "one_of"
+    },
+    "phone": {
+		"scope": "phone",
+		"prefix": "phone",
+        "body": [
+            "phone('${1:value}', pattern=${1:pattern})"
+        ],
+        "description": "phone"
+    },
+    "required": {
+		"scope": "required",
+		"prefix": "required",
+        "body": [
+            "required('${1:value}')"
+        ],
+        "description": "required"
+    },
+    "string": {
+		"scope": "string",
+		"prefix": "string",
+        "body": [
+            "string('${1:value}')"
+        ],
+        "description": "string"
+    },
+    "timezone": {
+		"scope": "timezone",
+		"prefix": "timezone",
+        "body": [
+            "timezone('${1:value}')"
+        ],
+        "description": "timezone"
+    },
+    "truthy": {
+		"scope": "truthy",
+		"prefix": "truthy",
+        "body": [
+            "truthy('${1:value}')"
+        ],
+        "description": "truthy"
+    },
+    "when": {
+		"scope": "when",
+		"prefix": "when",
+        "body": [
+            "when('${1:value}')"
+        ],
+        "description": "when"
+    }
+}

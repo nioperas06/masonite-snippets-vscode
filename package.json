@@ -87,7 +87,7 @@
             },
             {
               "language": "python",
-              "path": "./snippets/validator.json"
+              "path": "./snippets/rules.json"
             },
             {
               "language": "python",

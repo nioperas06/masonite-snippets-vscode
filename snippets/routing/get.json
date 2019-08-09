@@ -1,71 +1,17 @@
 {
-    "GET Route helper": {
+    "GET Route": {
 		"scope": "python",
-		"prefix": "get",
+		"prefix": "Get",
         "body": [
-            "from masonite.helpers.routes import get",
-            "",
-            "get('/${1:url/here}', '${2:Controller}@${3:method}'),"
+            "Get('/${1:url/here}', '${2:Controller}@${3:method}'),"
         ],
         "description": "GET Route"
 	},
-	"GET named Route helper": {
-		"scope": "python",
-		"prefix": "get.name",
-        "body": [
-            "from masonite.helpers.routes import get",
-            "",
-            "get('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
-        ],
-        "description": "GET named Route"
-	},
-	"GET Route with middleware helper": {
-		"scope": "python",
-		"prefix": "get.middleware",
-        "body": [
-            "from masonite.helpers.routes import get",
-            "",
-            "get('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
-        ],
-        "description": "Basic Get Route with shorthand get helper."
-	},
-	"GET named helper with middleware helper - 1": {
-		"scope": "python",
-		"prefix": "get.middleware.name",
-        "body": [
-            "from masonite.helpers.routes import get",
-            "",
-            "get('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
-        ],
-        "description": "GET named helper with middleware helper - 1"
-    },
-    "GET named hepler with middleware helper - 2": {
-		"scope": "python",
-		"prefix": "get.name.middleware",
-        "body": [
-            "from masonite.helpers.routes import get",
-            "",
-            "get('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
-        ],
-        "description": "GET named hepler with middleware helper - 2"
-	},
-	"GET Route": {
-		"scope": "python",
-        "prefix": "Get",
-        "body": [
-            "from masonite.routes import Get",
-            "",
-            "Get().route('/${1:url/here}', '${2:Controller}@${3:method}'),"
-        ],
-        "description": "GET Route"
-    },
 	"GET named Route": {
 		"scope": "python",
 		"prefix": "Get.name",
         "body": [
-            "from masonite.routes import Get",
-            "",
-            "Get().route('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
+            "Get('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}'),"
         ],
         "description": "GET named Route"
 	},
@@ -73,30 +19,24 @@
 		"scope": "python",
 		"prefix": "Get.middleware",
         "body": [
-            "from masonite.routes import Get",
-            "",
-            "Get().route('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
+            "Get('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}'),"
         ],
-        "description": "GET Route with middleware"
+        "description": "Basic Get Route with shorthand get."
 	},
-	"GET named Route with middleware - 1": {
+	"GET named with middleware - 1": {
 		"scope": "python",
 		"prefix": "Get.middleware.name",
         "body": [
-            "from masonite.routes import Get",
-            "",
-            "Get().route('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
+            "Get('/${1:url/here}', '${2:Controller}@${3:method}').middleware('${4:name}').name('${5:name}'),"
         ],
-        "description": "GET named Route with middleware - 1"
+        "description": "GET named with middleware - 1"
     },
-    "GET named Route with middleware - 2": {
+    "GET named with middleware - 2": {
 		"scope": "python",
 		"prefix": "Get.name.middleware",
         "body": [
-            "from masonite.routes import Get",
-            "",
-            "Get().route('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
+            "Get('/${1:url/here}', '${2:Controller}@${3:method}').name('${4:name}').middleware('${5:name}'),"
         ],
-        "description": "GET named Route with middleware - 2"
+        "description": "GET named with middleware - 2"
 	}
 }
