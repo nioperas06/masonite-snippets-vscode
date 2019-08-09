@@ -1,122 +1,122 @@
 {
-    "name": "masonite-snippets",
-    "displayName": "Masonite Snippets",
-    "description": "Masonite snippets for Visual Studio Code",
-    "version": "0.0.3",
-    "publisher": "nioperas06",
-    "author": {
-        "name": "Junior Gantin",
-        "email": "nioperas06@gmail.com"
-    },
-    "homepage": "https://github.com/nioperas06/masonite-snippets-vscode",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/nioperas06/masonite-snippets-vscode"
-    },
-    "bugs": {
-        "url": "https://github.com/nioperas06/masonite-snippets-vscode/issues"
-    },
-    "engines": {
-        "vscode": "^1.0.0"
-    },
-    "keywords": [
-        "python",
-        "snippet"
-    ],
-    "icon": "images/icon.png",
-    "galleryBanner": {
-        "color": "#f66f62",
-        "theme": "dark"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-              "language": "python",
-              "path": "./snippets/authentication.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/broadcasting.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/caching.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/encryption.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/events.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/helper.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/mail.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/queues-and-jobs.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/request.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/session.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/template-caching.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/uploading.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/validation.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/rules.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/view.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/routing/delete.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/routing/get.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/routing/patch.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/routing/post.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/routing/put.json"
-            },
-            {
-              "language": "python",
-              "path": "./snippets/routing/route-group.json"
-            }
-        ]
-    }
+  "name": "masonite-snippets",
+  "displayName": "Masonite Snippets",
+  "description": "Masonite snippets for Visual Studio Code",
+  "version": "0.0.5",
+  "publisher": "nioperas06",
+  "author": {
+    "name": "Junior Gantin",
+    "email": "nioperas06@gmail.com"
+  },
+  "homepage": "https://github.com/nioperas06/masonite-snippets-vscode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nioperas06/masonite-snippets-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/nioperas06/masonite-snippets-vscode/issues"
+  },
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "keywords": [
+    "python",
+    "snippet"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#f66f62",
+    "theme": "dark"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/authentication.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/broadcasting.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/caching.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/encryption.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/events.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/helper.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/mail.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/queues-and-jobs.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/request.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/session.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/template-caching.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/uploading.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/validation.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/rules.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/view.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/delete.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/get.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/patch.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/post.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/put.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/routing/route-group.json"
+      }
+    ]
+  }
 }
