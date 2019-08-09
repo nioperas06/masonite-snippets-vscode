@@ -1,6 +1,6 @@
 # Masonite Snippets
 
-[`Masonite snippets`](https://marketplace.visualstudio.com/items?itemName=nioperas06.masonite-snippets) extension for Visual Studio Code.
+[`Masonite snippets`](https://marketplace.visualstudio.com/items?itemName=nioperas06.masonite-snippets) extension for Visual Studio Code
 
 ## Screenshot
 
